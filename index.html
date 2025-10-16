@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raila Odinga - The People's Champion | A Tribute</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'playfair': ['Playfair Display', 'serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'kenya-red': '#BB0000',
+                        'kenya-green': '#006600',
+                        'kenya-black': '#000000',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+        
+        .animate-fadeInUp {
+            animation: fadeInUp 1s ease-out forwards;
+        }
+        
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #BB0000, #FF6B6B);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero-pattern {
+            background-color: #000000;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23BB0000' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="font-inter bg-gray-50">
+    
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50 border-b-4 border-kenya-red">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex-shrink-0">
+                    <h1 class="text-xl sm:text-2xl font-bold font-playfair gradient-text">BABA</h1>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#hero" class="text-gray-800 hover:text-kenya-red px-3 py-2 rounded-md text-sm font-semibold transition">Home</a>
+                        <a href="#journey" class="text-gray-800 hover:text-kenya-red px-3 py-2 rounded-md text-sm font-semibold transition">Journey</a>
+                        <a href="#legacy" class="text-gray-800 hover:text-kenya-red px-3 py-2 rounded-md text-sm font-semibold transition">Legacy</a>
+                        <a href="#gallery" class="text-gray-800 hover:text-kenya-red px-3 py-2 rounded-md text-sm font-semibold transition">Gallery</a>
+                        <a href="#quotes" class="text-gray-800 hover:text-kenya-red px-3 py-2 rounded-md text-sm font-semibold transition">Quotes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-pattern relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-kenya-black via-kenya-red/30 to-kenya-black opacity-90"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 sm:py-32 lg:py-40">
+            <div class="text-center animate-fadeInUp">
+                <div class="mb-8 inline-block">
+                    <div class="w-48 h-48 sm:w-64 sm:h-64 mx-auto rounded-full border-8 border-kenya-red shadow-2xl overflow-hidden animate-float">
+                        <img src="data:image/jpeg;base64,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" alt="Raila Odinga" class="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-500">
+                    </div>
+                </div>
+                <h1 class="font-playfair text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-6">
+                    Raila Amolo Odinga
+                </h1>
+                <p class="text-xl sm:text-2xl md:text-3xl text-gray-200 font-light mb-4">
+                    The People's Champion
+                </p>
+                <div class="flex items-center justify-center space-x-4 text-kenya-red">
+                    <div class="h-1 w-12 sm:w-20 bg-kenya-red"></div>
+                    <p class="text-lg sm:text-xl text-white font-semibold">BABA</p>
+                    <div class="h-1 w-12 sm:w-20 bg-kenya-red"></div>
+                </div>
+                <p class="mt-8 max-w-3xl mx-auto text-base sm:text-lg text-gray-300 leading-relaxed px-4">
+                    "A life dedicated to democracy, justice, and the unwavering pursuit of a better Kenya for all. 
+                    Through decades of struggle, sacrifice, and steadfast commitment, he remains the voice of millions."
+                </p>
+                <div class="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#journey" class="bg-kenya-red text-white px-8 py-4 rounded-full font-semibold hover:bg-red-700 transition shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                        Explore His Journey
+                    </a>
+                    <a href="#legacy" class="bg-white text-kenya-red px-8 py-4 rounded-full font-semibold hover:bg-gray-100 transition shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                        His Legacy
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="absolute bottom-0 left-0 right-0">
+            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 120L60 110C120 100 240 80 360 70C480 60 600 60 720 65C840 70 960 80 1080 85C1200 90 1320 90 1380 90L1440 90V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="#F9FAFB"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Quick Stats Section -->
+    <section class="bg-gray-50 py-12 sm:py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center transform hover:scale-105 transition border-t-4 border-kenya-red">
+                    <div class="text-3xl sm:text-4xl font-bold text-kenya-red mb-2">5</div>
+                    <div class="text-sm sm:text-base text-gray-600 font-semibold">Presidential Campaigns</div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center transform hover:scale-105 transition border-t-4 border-kenya-green">
+                    <div class="text-3xl sm:text-4xl font-bold text-kenya-green mb-2">50+</div>
+                    <div class="text-sm sm:text-base text-gray-600 font-semibold">Years in Politics</div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center transform hover:scale-105 transition border-t-4 border-kenya-red">
+                    <div class="text-3xl sm:text-4xl font-bold text-kenya-red mb-2">10</div>
+                    <div class="text-sm sm:text-base text-gray-600 font-semibold">Years Detained/Exiled</div>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-lg text-center transform hover:scale-105 transition border-t-4 border-kenya-green">
+                    <div class="text-3xl sm:text-4xl font-bold text-kenya-green mb-2">∞</div>
+                    <div class="text-sm sm:text-base text-gray-600 font-semibold">Lives Touched</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journey Timeline Section -->
+    <section id="journey" class="py-16 sm:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    A Journey of <span class="gradient-text">Resilience</span>
+                </h2>
+                <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
+                    From the struggle for independence to the fight for democracy, his journey mirrors Kenya's own path to freedom.
+                </p>
+            </div>
+
+            <div class="relative">
+                <!-- Timeline line -->
+                <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gradient-to-b from-kenya-red to-kenya-green"></div>
+
+                <!-- Timeline items -->
+                <div class="space-y-12">
+                    <!-- 1945 - Birth -->
+                    <div class="relative flex flex-col md:flex-row items-center md:justify-between">
+                        <div class="w-full md:w-5/12 md:text-right mb-4 md:mb-0">
+                            <div class="bg-gradient-to-r from-red-50 to-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1">
+                                <h3 class="font-playfair text-2xl sm:text-3xl font-bold text-kenya-red mb-2">1945</h3>
+                                <h4 class="font-semibold text-lg sm:text-xl mb-3 text-gray-800">The Beginning</h4>
+                                <p class="text-gray-600 text-sm sm:text-base">Born in Maseno, Nyanza Province, into a family that would shape Kenya's political landscape.</p>
+                            </div>
+                        </div>
+                        <div class="hidden md:flex w-2/12 justify-center">
+                            <div class="w-8 h-8 bg-kenya-red rounded-full border-4 border-white shadow-lg z-10"></div>
+                        </div>
+                        <div class="w-full md:w-5/12"></div>
+                    </div>
+
+                    <!-- 1982 - Detention -->
+                    <div class="relative flex flex-col md:flex-row items-center md:justify-between">
+                        <div class="w-full md:w-5/12 order-2 md:order-1"></div>
+                        <div class="hidden md:flex w-2/12 justify-center order-1 md:order-2">
+                            <div class="w-8 h-8 bg-kenya-black rounded-full border-4 border-white shadow-lg z-10"></div>
+                        </div>
+                        <div class="w-full md:w-5/12 order-3 mb-4 md:mb-0">
+                            <div class="bg-gradient-to-l from-gray-50 to-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1">
+                                <h3 class="font-playfair text-2xl sm:text-3xl font-bold text-kenya-black mb-2">1982</h3>
+                                <h4 class="font-semibold text-lg sm:text-xl mb-3 text-gray-800">Years of Struggle</h4>
+                                <p class="text-gray-600 text-sm sm:text-base">Detained without trial for his role in the push for multi-party democracy. A sacrifice for freedom.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2007 - Prime Minister -->
+                    <div class="relative flex flex-col md:flex-row items-center md:justify-between">
+                        <div class="w-full md:w-5/12 md:text-right mb-4 md:mb-0">
+                            <div class="bg-gradient-to-r from-green-50 to-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1">
+                                <h3 class="font-playfair text-2xl sm:text-3xl font-bold text-kenya-green mb-2">2008</h3>
+                                <h4 class="font-semibold text-lg sm:text-xl mb-3 text-gray-800">Prime Minister of Kenya</h4>
+                                <p class="text-gray-600 text-```html
+sm:text-base">Led the Grand Coalition Government, steering Kenya through one of its most challenging periods toward reconciliation and unity.</p>
+                            </div>
+                        </div>
+                        <div class="hidden md:flex w-2/12 justify-center">
+                            <div class="w-8 h-8 bg-kenya-green rounded-full border-4 border-white shadow-lg z-10"></div>
+                        </div>
+                        <div class="w-full md:w-5/12"></div>
+                    </div>
+
+                    <!-- 2018 - Handshake -->
+                    <div class="relative flex flex-col md:flex-row items-center md:justify-between">
+                        <div class="w-full md:w-5/12 order-2 md:order-1"></div>
+                        <div class="hidden md:flex w-2/12 justify-center order-1 md:order-2">
+                            <div class="w-8 h-8 bg-kenya-red rounded-full border-4 border-white shadow-lg z-10"></div>
+                        </div>
+                        <div class="w-full md:w-5/12 order-3 mb-4 md:mb-0">
+                            <div class="bg-gradient-to-l from-red-50 to-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1">
+                                <h3 class="font-playfair text-2xl sm:text-3xl font-bold text-kenya-red mb-2">2018</h3>
+                                <h4 class="font-semibold text-lg sm:text-xl mb-3 text-gray-800">The Handshake</h4>
+                                <p class="text-gray-600 text-sm sm:text-base">A historic moment of unity - choosing nation over politics, peace over division. The Building Bridges Initiative was born.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2022 - AU Commission -->
+                    <div class="relative flex flex-col md:flex-row items-center md:justify-between">
+                        <div class="w-full md:w-5/12 md:text-right mb-4 md:mb-0">
+                            <div class="bg-gradient-to-r from-orange-50 to-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-1">
+                                <h3 class="font-playfair text-2xl sm:text-3xl font-bold text-orange-600 mb-2">2022</h3>
+                                <h4 class="font-semibold text-lg sm:text-xl mb-3 text-gray-800">Continental Leadership</h4>
+                                <p class="text-gray-600 text-sm sm:text-base">Appointed AU High Representative for Infrastructure Development - taking Kenya's vision to the African stage.</p>
+                            </div>
+                        </div>
+                        <div class="hidden md:flex w-2/12 justify-center">
+                            <div class="w-8 h-8 bg-orange-600 rounded-full border-4 border-white shadow-lg z-10"></div>
+                        </div>
+                        <div class="w-full md:w-5/12"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Legacy Section -->
+    <section id="legacy" class="py-16 sm:py-24 bg-gradient-to-br from-gray-50 to-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    His Enduring <span class="gradient-text">Legacy</span>
+                </h2>
+                <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
+                    A legacy written in the hearts of millions and the future of a nation.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Democracy Champion -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition duration-300">
+                    <div class="h-3 bg-gradient-to-r from-kenya-red to-red-400"></div>
+                    <div class="p-8">
+                        <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-kenya-red" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-playfair text-2xl font-bold mb-4 text-gray-900">Democracy Champion</h3>
+                        <p class="text-gray-600 leading-relaxed">Fought tirelessly for multi-party democracy when it was dangerous to do so. His sacrifices paved the way for the freedoms Kenyans enjoy today.</p>
+                    </div>
+                </div>
+
+                <!-- Infrastructure Visionary -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition duration-300">
+                    <div class="h-3 bg-gradient-to-r from-kenya-green to-green-400"></div>
+                    <div class="p-8">
+                        <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-kenya-green" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-playfair text-2xl font-bold mb-4 text-gray-900">Infrastructure Visionary</h3>
+                        <p class="text-gray-600 leading-relaxed">Championed transformative infrastructure projects that connected communities and opened up economic opportunities across Kenya.</p>
+                    </div>
+                </div>
+
+                <!-- Pan-Africanist -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition duration-300">
+                    <div class="h-3 bg-gradient-to-r from-yellow-500 to-orange-400"></div>
+                    <div class="p-8">
+                        <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-playfair text-2xl font-bold mb-4 text-gray-900">Pan-Africanist</h3>
+                        <p class="text-gray-600 leading-relaxed">A true believer in African unity and integration. His vision extends beyond Kenya to the prosperity of the entire continent.</p>
+                    </div>
+                </div>
+
+                <!-- Voice of the People -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition duration-300">
+                    <div class="h-3 bg-gradient-to-r from-blue-500 to-blue-400"></div>
+                    <div class="p-8">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-playfair text-2xl font-bold mb-4 text-gray-900">Voice of the People</h3>
+                        <p class="text-gray-600 leading-relaxed">Known as "Baba" - Father - his connection with ordinary Kenyans transcends politics. He speaks for the voiceless and champions the marginalized.</p>
+                    </div>
+                </div>
+
+                <!-- Reformer -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition duration-300">
+                    <div class="h-3 bg-gradient-to-r from-purple-500 to-purple-400"></div>
+                    <div class="p-8">
+                        <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-playfair text-2xl font-bold mb-4 text-gray-900">Constitutional Reformer</h3>
+                        <p class="text-gray-600 leading-relaxed">Instrumental in the fight for Kenya's 2010 Constitution, which enshrined devolution and strengthened democratic institutions.</p>
+                    </div>
+                </div>
+
+                <!-- Peacemaker -->
+                <div class="bg-white rounded-2xl shadow-xl overflow-hidden transform hover:scale-105 transition duration-300">
+                    <div class="h-3 bg-gradient-to-r from-teal-500 to-teal-400"></div>
+                    <div class="p-8">
+                        <div class="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mb-6">
+                            <svg class="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-playfair text-2xl font-bold mb-4 text-gray-900">Peacemaker</h3>
+                        <p class="text-gray-600 leading-relaxed">Consistently chosen reconciliation over revenge, unity over division - putting Kenya first even when it cost him politically.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inspiring Quotes Section -->
+    <section id="quotes" class="py-16 sm:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    Words of <span class="gradient-text">Wisdom</span>
+                </h2>
+                <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
+                    His words have inspired generations and will continue to echo through time.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Quote 1 -->
+                <div class="bg-gradient-to-br from-red-50 to-white p-8 sm:p-10 rounded-2xl shadow-xl border-l-4 border-kenya-red transform hover:scale-105 transition">
+                    <svg class="w-```html
+12 h-12 text-kenya-red opacity-50 mb-4" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                    </svg>
+                    <p class="text-lg sm:text-xl text-gray-800 font-medium leading-relaxed mb-6 italic">
+                        "I have fought for democracy and social justice all my life. I will continue to do so as long as I live."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="h-1 w-12 bg-kenya-red mr-4"></div>
+                        <p class="text-gray-600 font-semibold">On His Mission</p>
+                    </div>
+                </div>
+
+                <!-- Quote 2 -->
+                <div class="bg-gradient-to-br from-green-50 to-white p-8 sm:p-10 rounded-2xl shadow-xl border-l-4 border-kenya-green transform hover:scale-105 transition">
+                    <svg class="w-12 h-12 text-kenya-green opacity-50 mb-4" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                    </svg>
+                    <p class="text-lg sm:text-xl text-gray-800 font-medium leading-relaxed mb-6 italic">
+                        "No one will give you freedom. You must fight for it, struggle for it, and be prepared to die for it."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="h-1 w-12 bg-kenya-green mr-4"></div>
+                        <p class="text-gray-600 font-semibold">On Freedom</p>
+                    </div>
+                </div>
+
+                <!-- Quote 3 -->
+                <div class="bg-gradient-to-br from-orange-50 to-white p-8 sm:p-10 rounded-2xl shadow-xl border-l-4 border-orange-600 transform hover:scale-105 transition">
+                    <svg class="w-12 h-12 text-orange-600 opacity-50 mb-4" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                    </svg>
+                    <p class="text-lg sm:text-xl text-gray-800 font-medium leading-relaxed mb-6 italic">
+                        "Kenya is bigger than any individual. We must put the country first, always."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="h-1 w-12 bg-orange-600 mr-4"></div>
+                        <p class="text-gray-600 font-semibold">On Patriotism</p>
+                    </div>
+                </div>
+
+                <!-- Quote 4 -->
+                <div class="bg-gradient-to-br from-blue-50 to-white p-8 sm:p-10 rounded-2xl shadow-xl border-l-4 border-blue-600 transform hover:scale-105 transition">
+                    <svg class="w-12 h-12 text-blue-600 opacity-50 mb-4" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                    </svg>
+                    <p class="text-lg sm:text-xl text-gray-800 font-medium leading-relaxed mb-6 italic">
+                        "The youth of today are the leaders of tomorrow. We must invest in them and give them hope."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="h-1 w-12 bg-blue-600 mr-4"></div>
+                        <p class="text-gray-600 font-semibold">On Youth</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 sm:py-24 bg-gradient-to-br from-gray-900 to-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
+                    Moments in <span class="text-kenya-red">History</span>
+                </h2>
+                <p class="text-lg sm:text-xl text-gray-300 max-w-3xl mx-auto">
+                    A visual journey through decades of service and sacrifice.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Gallery Item 1 -->
+                <div class="group relative overflow-hidden rounded-xl shadow-2xl transform hover:scale-105 transition duration-500">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmp8NkIGVsBb2t-S6Yq6s5HbONKa2bUfo33w&s" alt="Rally" class="w-full h-64 object-cover grayscale group-hover:grayscale-0 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div class="absolute bottom-0 p-6">
+                            <h3 class="text-white font-bold text-xl mb-2">Rally for Democracy</h3>
+                            <p class="text-gray-300 text-sm">Leading the masses in the fight for change</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2 -->
+                <div class="group relative overflow-hidden rounded-xl shadow-2xl transform hover:scale-105 transition duration-500">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk9lBBTExNX48Bl3W4NspNrl8nESLUUz646Q&s" alt="Community" class="w-full h-64 object-cover grayscale group-hover:grayscale-0 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div class="absolute bottom-0 p-6">
+                            <h3 class="text-white font-bold text-xl mb-2">With the People</h3>
+                            <p class="text-gray-300 text-sm">Always close to the grassroots</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3 -->
+                <div class="group relative overflow-hidden rounded-xl shadow-2xl transform hover:scale-105 transition duration-500">
+                    <img src="data:image/jpeg;base64,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" alt="Handshake" class="w-full h-64 object-cover grayscale group-hover:grayscale-0 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div class="absolute bottom-0 p-6">
+                            <h3 class="text-white font-bold text-xl mb-2">The Handshake</h3>
+                            <p class="text-gray-300 text-sm">A historic moment of unity</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4 -->
+                <div class="group relative overflow-hidden rounded-xl shadow-2xl transform hover:scale-105 transition duration-500">
+                    <img src="data:image/jpeg;base64,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" alt="International" class="w-full h-64 object-cover grayscale group-hover:grayscale-0 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div class="absolute bottom-0 p-6">
+                            <h3 class="text-white font-bold text-xl mb-2">On The Global Stage</h3>
+                            <p class="text-gray-300 text-sm">Representing Kenya to the world</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5 -->
+                <div class="group relative overflow-hidden rounded-xl shadow-2xl transform hover:scale-105 transition duration-500">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAwycVQCR_q4d3HmBQBwb_w7N4YDjZjI3LCA&s" alt="Youth" class="w-full h-64 object-cover grayscale group-hover:grayscale-0 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div class="absolute bottom-0 p-6">
+                            <h3 class="text-white font-bold text-xl mb-2">Inspiring Youth</h3>
+                            <p class="text-gray-300 text-sm">Mentoring the next generation</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6 -->
+                <div class="group relative overflow-hidden rounded-xl shadow-2xl transform hover:scale-105 transition duration-500">
+                    <img src="data:image/jpeg;base64,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" alt="Infrastructure" class="w-full h-64 object-cover grayscale group-hover:grayscale-0 transition duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition duration-300">
+                        <div class="absolute bottom-0 p-6">
+                            <h3 class="text-white font-bold text-xl mb-2">Building Kenya</h3>
+                            <p class="text-gray-300 text-sm">Infrastructure development vision</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-16 sm:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                    What <span class="gradient-text">They Say</span>
+                </h2>
+                <p class="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
+                    Voices from those whose lives he has touched.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-kenya-red rounded-full flex items-center justify-center text-white font-bold text-xl">
+                            JM
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-gray-900">John Mboya</h4>
+                            <p class="text-sm text-gray-600">Small Business Owner</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic leading-relaxed">
+                        "Baba has always stood with the common mwananchi. His fight for our rights gives us hope for a better tomorrow."
+                    </p>
+                    <div class="flex mt-4 text-kenya-red">
+                        ★★★★★
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-kenya-green rounded-full flex items-center justify-center text-white font-bold text-xl">
+                            AW
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-gray-900">Akinyi Wanjiru</h4>
+                            <p class="text-sm text-gray-600">University Student</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic leading-relaxed">
+                        "His dedication to education and youth empowerment has inspired my generation to believe in a better Kenya."
+                    </p>
+                    <div class="flex mt-4 text-kenya-green">
+                        ★★★★★
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-gradient-to-br from-gray-50 to-white p-8 rounded-2xl shadow-lg hover:shadow-2xl transition">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center text-white font-bold text-xl">
+                            DK
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-gray-900">David Kipchoge</h4>
+                            <p class="text-sm text-gray-600">Community Leader</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 italic leading-relaxed">
+                        "A true servant leader who has sacrificed so much for this nation. His legacy will live on for generations."
+                    </p>
+                    <div class="flex mt-4 text-orange-600">
+                        ★★★★★
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-16 sm:py-24 bg-gradient-to-r from-kenya-black via-kenya-red to-kenya-black relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23ffffff\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+        </div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h2 class="font-playfair text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6">
+                The Journey Continues
+            </h2>
+            <p class="text-lg sm:text-xl text-gray-200 mb-8 leading-relaxed">
+                His fight for democracy, justice, and equality inspires us all. Let us honor his legacy by continuing to build the Kenya he has always envisioned - united, prosperous, and free.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <button class="bg-white text-kenya-red px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-100 transition shadow-xl transform hover:scale-105">
+                    Share This Tribute
+                </button>
+                <button class="bg-kenya-green text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-green-700 transition shadow-xl transform hover:scale-105">
+                    Learn More
+                </button>
+            </div>
+        </div>
+    </section>
+        <!-- Support Developer Section -->
+    <section class="py-16 sm:py-20 bg-gradient-to-br from-purple-900 via-indigo-900 to-blue-900 relative overflow-hidden">
+        <!-- Animated background -->
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute inset-0 animate-pulse" style="background-image: radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%), radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);"></div>
+        </div>
+        
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <!-- Heart Icon with Animation -->
+            <div class="text-center mb-8">
+                <div class="inline-block animate-bounce">
+                    <svg class="w-16 h-16 mx-auto text-red-400 mb-4" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"/>
+                    </svg>
+                </div>
+                <h2 class="font-playfair text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4">
+                    Did This Touch Your Heart?
+                </h2>
+                <p class="text-lg sm:text-xl text-gray-200 leading-relaxed mb-6">
+                    If this tribute moved you and you appreciate the work put into creating it,<br class="hidden sm:block">
+                    consider supporting the developer with a small token of appreciation! 🙏
+                </p>
+            </div>
+
+            <!-- Support Card -->
+            <div class="bg-white/10 backdrop-blur-lg rounded-3xl p-8 sm:p-10 border border-white/20 shadow-2xl transform hover:scale-105 transition duration-300">
+                <div class="text-center">
+                    <!-- Money Icon -->
+                    <div class="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-green-400 to-emerald-600 rounded-full mb-6 shadow-lg">
+                        <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+
+                    <h3 class="font-playfair text-2xl sm:text-3xl font-bold text-white mb-4">
+                        Support This Work
+                    </h3>
+                    
+                    <p class="text-gray-200 mb-6 text-base sm:text-lg">
+                        Your support helps me create more inspiring content.<br class="hidden sm:block">
+                        Every contribution, no matter how small, is deeply appreciated! 💝
+                    </p>
+
+                    <!-- Phone Number Display -->
+                    <div class="bg-gradient-to-r from-green-500 to-emerald-600 rounded-2xl p-6 mb-6 shadow-xl">
+                        <p class="text-white text-sm font-semibold mb-2 uppercase tracking-wide">
+                            📱 M-PESA / Airtel Money
+                        </p>
+                        <div class="flex items-center justify-center space-x-3">
+                            <p class="font-mono text-3xl sm:text-4xl font-bold text-white tracking-wider">
+                                0748359205
+                            </p>
+                            <button onclick="copyPhoneNumber()" class="bg-white/20 hover:bg-white/30 text-white px-4 py-2 rounded-lg transition flex items-center space-x-2 backdrop-blur">
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                                </svg>
+                                <span class="text-sm font-semibold">Copy</span>
+                            </button>
+                        </div>
+                        <p class="text-green-100 text-xs mt-3 font-medium">
+                            ✨ Send any amount - Ksh 10, 50, 100, or more
+                        </p>
+                    </div>
+
+                    <!-- Benefits of Supporting -->
+                    <div class="grid sm:grid-cols-3 gap-4 mb-6">
+                        <div class="bg-white/5 backdrop-blur rounded-xl p-4 border border-white/10">
+                            <div class="text-3xl mb-2">🎨</div>
+                            <p class="text-white text-sm font-semibold">More Quality Content</p>
+                        </div>
+                        <div class="bg-white/5 backdrop-blur rounded-xl p-4 border border-white/10">
+                            <div class="text-3xl mb-2">⚡</div>
+                            <p class="text-white text-sm font-semibold">Faster Updates</p>
+                        </div>
+                        <div class="bg-white/5 backdrop-blur rounded-xl p-4 border border-white/10">
+                            <div class="text-3xl mb-2">💪</div>
+                            <p class="text-white text-sm font-semibold">Support Innovation</p>
+                        </div>
+                    </div>
+
+                    <!-- Thank You Message -->
+                    <div class="bg-gradient-to-r from-orange-500/20 to-pink-500/20 border border-orange-300/30 rounded-xl p-4 backdrop-blur">
+                        <p class="text-white font-semibold text-sm sm:text-base italic">
+                            "Thank you for appreciating this work! Your support means the world to me and keeps me motivated to create more inspiring tributes and projects for our community." 
+                        </p>
+                        <p class="text-orange-200 mt-2 text-sm">
+                            - The Developer 🙏
+                        </p>
+                    </div>
+
+                    <!-- Social Share -->
+                    <div class="mt-8 pt-6 border-t border-white/20">
+                        <p class="text-gray-300 text-sm mb-4">Can't support financially? Share this tribute instead! 🚀</p>
+                        <div class="flex justify-center space-x-3">
+                            <button class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full transition shadow-lg flex items-center space-x-2">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                </svg>
+                                <span class="text-sm font-semibold">Share</span>
+                            </button>
+                            <button class="bg-blue-400 hover:bg-blue-500 text-white px-6 py-2 rounded-full transition shadow-lg flex items-center space-x-2">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                                </svg>
+                                <span class="text-sm font-semibold">Tweet</span>
+                            </button>
+                            <button class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-full transition shadow-lg flex items-center space-x-2">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.890-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                                </svg>
+                                <span class="text-sm font-semibold">WhatsApp</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Copy phone number function
+        function copyPhoneNumber() {
+            const phoneNumber = '0748359205';
+            navigator.clipboard.writeText(phoneNumber).then(() => {
+                // Show success message
+                const btn = event.currentTarget;
+                const originalHTML = btn.innerHTML;
+                btn.innerHTML = '<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><span class="text-sm font-semibold">Copied!</span>';
+                btn.classList.add('bg-green-500');
+                
+                setTimeout(() => {
+                    btn.innerHTML = originalHTML;
+                    btn.classList.remove('bg-green-500');
+                }, 2000);
+            }).catch(err => {
+                alert('Phone number: 0748359205');
+            });
+        }
+    </script>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <!-- About -->
+                <div>
+                    <h3 class="font-playfair text-2xl font-bold mb-4 gradient-text">About This Tribute</h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        This page is a heartfelt tribute to Raila Amolo Odinga, celebrating his unwavering commitment to democracy, justice, and the people of Kenya.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="font-playfair text-2xl font-bold mb-4 text-white">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#hero" class="text-gray-400 hover:text-kenya-red transition">Home</a></li>
+                        <li><a href="#journey" class="text-gray-400 hover:text-kenya-red transition">His Journey</a></li>
+                        <li><a href="#legacy" class="text-gray-400 hover:text-kenya-red transition">Legacy</a></li>
+                        <li><a href="#quotes" class="text-gray-400 hover:text-kenya-red transition">Quotes</a></li>
+                        <li><a href="#gallery" class="text-gray-400 hover:text-kenya-red transition">Gallery</a></li>
+                    </ul>
+                </div>
+
+                <!-- Connect -->
+                <div>
+                    <h3 class="font-playfair text-2xl font-bold mb-4 text-white">Connect</h3>
+                    <p class="text-gray-400 mb-4">
+                        Share this tribute and keep the conversation going about Kenya's democratic journey.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-kenya-red transition">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-kenya-red transition">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-kenya-red transition">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <p class="text-gray-400 text-sm mb-4 md:mb-0">
+                        &copy; 2024 Raila Odinga Tribute. Created with ❤️ for Kenya.
+                    </p>
+                    <div class="flex items-center space-x-2">
+                        <div class="w-8 h-6 bg-kenya-black"></div>
+                        <div class="w-8 h-6 bg-kenya-red"></div>
+                        <div class="w-8 h-6 bg-kenya-green"></div>
+                        <span class="ml-2 text-gray-400 text-sm font-semibold">Kenya Forever</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTop" class="fixed bottom-8 right-8 bg-kenya-red text-white w-12 h-12 rounded-full shadow-lg hover:bg-red-700 transition transform hover:scale-110 hidden z-50">
+        <svg class="w-6 h-6 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </button>
+
+    <!-- JavaScript for interactivity -->
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Scroll to top button
+        const scrollTopBtn = document.getElementById('scrollTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollTopBtn.classList.remove('hidden');
+            } else {
+                scrollTopBtn.classList.add('hidden');
+            }
+        });
+
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px-50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections
+        document.querySelectorAll('section > div').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(20px)';
+            section.style.transition = 'opacity 0.8s ease-out, transform 0.8s ease-out';
+            observer.observe(section);
+        });
+
+        // Dynamic year update
+        const currentYear = new Date().getFullYear();
+        document.querySelectorAll('.current-year').forEach(el => {
+            el.textContent = currentYear;
+        });
+
+        // Add hover effect to cards
+        document.querySelectorAll('.hover\\:scale-105').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'scale(1.05)';
+            });
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'scale(1)';
+            });
+        });
+
+        // Console message
+        console.log('%c🇰🇪 Raila Odinga Tribute Page 🇰🇪', 'color: #BB0000; font-size: 20px; font-weight: bold;');
+        console.log('%cA life dedicated to democracy and justice', 'color: #006600; font-size: 14px;');
+    </script>
+
+</body>
+</html>
+                      
